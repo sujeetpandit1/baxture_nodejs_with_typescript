@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+      "target": "es2022",                 /* Specify the ECMAScript version */
+      "module": "commonjs",               /* Specify module code generation */
+      "lib": ["es2022", "dom"],           /* Specify a set of bundled library declaration files */
+      "esModuleInterop": true,            /* Enables emitting additional JavaScript to ease support for importing CommonJS modules */
+      "skipLibCheck": true,                /* Skip type checking of declaration files */
+      "forceConsistentCasingInFileNames": true, /* Ensure that casing is correct in imports */
+      "strict": true,                     /* Enable all strict type-checking options */
+      "noImplicitAny": true,               /* Raise error on expressions and declarations with an implied 'any' type */
+      "moduleResolution": "node",         /* Specify module resolution strategy */
+      "baseUrl": "./",                    /* Base directory to resolve non-relative module names */
+      "paths": {
+        "*": ["src/*"]                    /* Mapping paths to the source directory */
+      },
+      "outDir": "./dist",                 /* Redirect output structure to the directory */
+      "rootDir": "./src",                 /* Specify the root directory of input files */
+      "declaration": true,                /* Generates corresponding '.d.ts' file */
+      "sourceMap": true,                  /* Generates corresponding '.map' file */
+      "resolveJsonModule": true,        /* Include modules imported with '.json' extension */
+    //   "esModuleInterop": true,             /* Emit '__esModule' for runtime and compile-time compatibility */
+    },
+    "include": [
+      "src/**/*.ts"                      /* Include TypeScript files in the 'src' directory and its subdirectories */
+, "src/load_balancer.ts"    ],
+    "exclude": [
+      "node_modules",                     /* Exclude 'node_modules' directory */
+      "dist"                              /* Exclude 'dist' directory */
+    ]
+  }
+  
